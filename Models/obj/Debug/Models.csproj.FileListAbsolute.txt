@@ -1,0 +1,4 @@
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Models\bin\Debug\Models.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Models\bin\Debug\Models.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Models\obj\Debug\Models.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Models\obj\Debug\Models.pdb

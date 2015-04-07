@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4Architecture.Web", "Mvc4Architecture\Mvc4Architecture.Web.csproj", "{935D5430-6E26-4A2D-A1CB-DFC1EE648A1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4Architecture.Tests", "Mvc4Architecture.Tests\Mvc4Architecture.Tests.csproj", "{E418D3F4-568A-4244-87FF-0438BCD520AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel", "DomainModel\DomainModel.csproj", "{834C67FD-1925-4291-B402-E4AD495C5466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataTier", "DataTier", "{C9759C58-47C5-4E85-89FC-36C26A09CFA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessTier", "BusinessTier", "{02FB8674-78C4-4580-AFA3-334E13AF27D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{0EC17AD4-A53D-43D6-9987-B721774F31DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Sql", "Data.Sql\Data.Sql.csproj", "{6EB97908-457E-41DD-BB03-D0E55826BAA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{CB55AF5F-E9F3-4014-A751-B3AE8A4FC6EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{C1D77A37-CA98-445F-8C0B-F249A5D566F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{935D5430-6E26-4A2D-A1CB-DFC1EE648A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935D5430-6E26-4A2D-A1CB-DFC1EE648A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935D5430-6E26-4A2D-A1CB-DFC1EE648A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935D5430-6E26-4A2D-A1CB-DFC1EE648A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E418D3F4-568A-4244-87FF-0438BCD520AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E418D3F4-568A-4244-87FF-0438BCD520AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E418D3F4-568A-4244-87FF-0438BCD520AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E418D3F4-568A-4244-87FF-0438BCD520AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{834C67FD-1925-4291-B402-E4AD495C5466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834C67FD-1925-4291-B402-E4AD495C5466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834C67FD-1925-4291-B402-E4AD495C5466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834C67FD-1925-4291-B402-E4AD495C5466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC17AD4-A53D-43D6-9987-B721774F31DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC17AD4-A53D-43D6-9987-B721774F31DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC17AD4-A53D-43D6-9987-B721774F31DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC17AD4-A53D-43D6-9987-B721774F31DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB97908-457E-41DD-BB03-D0E55826BAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB97908-457E-41DD-BB03-D0E55826BAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB97908-457E-41DD-BB03-D0E55826BAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB97908-457E-41DD-BB03-D0E55826BAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D77A37-CA98-445F-8C0B-F249A5D566F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D77A37-CA98-445F-8C0B-F249A5D566F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D77A37-CA98-445F-8C0B-F249A5D566F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D77A37-CA98-445F-8C0B-F249A5D566F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EC17AD4-A53D-43D6-9987-B721774F31DC} = {C9759C58-47C5-4E85-89FC-36C26A09CFA9}
+		{6EB97908-457E-41DD-BB03-D0E55826BAA4} = {C9759C58-47C5-4E85-89FC-36C26A09CFA9}
+		{834C67FD-1925-4291-B402-E4AD495C5466} = {02FB8674-78C4-4580-AFA3-334E13AF27D2}
+		{C1D77A37-CA98-445F-8C0B-F249A5D566F4} = {CB55AF5F-E9F3-4014-A751-B3AE8A4FC6EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

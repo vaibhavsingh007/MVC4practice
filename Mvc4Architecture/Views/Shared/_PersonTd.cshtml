@@ -1,0 +1,17 @@
+﻿@model Models.Person
+<tr>
+    <td>
+        @Ajax.ActionLink(Model.FirstName, "PersonDetails", new { id = Model.Id }, new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "personDetails"
+                    })
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.LastName)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.HomeTown)
+    </td>
+</tr>

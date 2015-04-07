@@ -1,0 +1,12 @@
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\obj\Debug\Data.Sql.csprojResolveAssemblyReference.cache
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Data.Sql.dll.config
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Data.Sql.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Data.Sql.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Data.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\EntityFramework.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Models.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Data.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\Models.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\bin\Debug\EntityFramework.xml
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\obj\Debug\Data.Sql.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data.Sql\obj\Debug\Data.Sql.pdb

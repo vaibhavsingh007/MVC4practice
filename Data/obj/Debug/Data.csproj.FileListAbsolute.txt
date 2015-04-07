@@ -1,0 +1,7 @@
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\bin\Debug\Data.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\bin\Debug\Data.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\bin\Debug\Models.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\bin\Debug\Models.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\obj\Debug\Data.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Data\obj\Debug\Data.pdb
