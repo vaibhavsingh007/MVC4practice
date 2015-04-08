@@ -3,29 +3,30 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
-<div class="personList">
-<table>
-
-<tr>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Home Town</th>
-</tr>
-
-@foreach (Person person in Model)
-{ 
-    @Html.Partial("_PersonTd", person)
+@section scripts{
+    @*@Scripts.Render("~/bundles/jqueryui")*@
 }
-
-</table>
-
+<h2>
+    Index</h2>
+<div class="personList">
+    <table>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Home Town
+            </th>
+        </tr>
+        @foreach (Person person in Model)
+        { 
+            @Html.Partial("_PersonTd", person)
+        }
+    </table>
 </div>
-
-
-
 <div id="personDetails">
-
 </div>
+

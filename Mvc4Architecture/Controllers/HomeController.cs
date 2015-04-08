@@ -7,6 +7,7 @@ using Microsoft.Practices.ServiceLocation;
 using Data;
 using Models;
 using DomainModel.Abstract;
+using Mvc4Architecture.Models;
 
 namespace Mvc4Architecture.Controllers
 {
@@ -23,6 +24,19 @@ namespace Mvc4Architecture.Controllers
         public ActionResult Index()
         {
             IEnumerable<Person> persons = _personHandler.GetAllPersons();
+            List<PersonTdVM> personVMs = new List<PersonTdVM>();
+
+            foreach (Person person in persons)
+            {
+                personVMs.Add(new PersonTdVM
+                            {
+                                Person = person as Person,
+                                AddressCount = person.Addresses.Count(),
+                                AddressTitleString = String.Join("; ", person.Addresses.Select(a => a.Street))
+
+                            });
+            }
+
             return View(persons);
         }
 

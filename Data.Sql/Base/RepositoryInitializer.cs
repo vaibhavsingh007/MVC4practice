@@ -37,7 +37,7 @@ namespace Data.Sql.Base
 
         public void Initialize()
         {
-            this.Context.Set<Country>().ToList().Count();
+            this.Context.Set<Address>().ToList().Count();
         }
     }
 }

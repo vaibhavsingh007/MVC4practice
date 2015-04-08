@@ -13,6 +13,7 @@ namespace Models
         public int Age { get; set; }
         public string HomeTown { get; set; }
 
-        public virtual ICollection<Country> VisitedCountries { get; set; }
+        // So a person can have more than one addresses
+        public virtual ICollection<Address> Addresses { get; set; }
     }
 }

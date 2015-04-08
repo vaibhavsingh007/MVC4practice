@@ -1,7 +1,7 @@
-﻿@model Models.Person
+﻿@model Mvc4Architecture.Models.PersonTdVM
 <tr>
     <td>
-        @Ajax.ActionLink(Model.FirstName, "PersonDetails", new { id = Model.Id }, new AjaxOptions
+        @Ajax.ActionLink(Model.Person.FirstName, "PersonDetails", new { id = Model.Person.Id }, new AjaxOptions
                     {
                         HttpMethod = "GET",
                         InsertionMode = InsertionMode.Replace,
@@ -9,9 +9,12 @@
                     })
     </td>
     <td>
-        @Html.DisplayFor(model => model.LastName)
+        @Html.DisplayFor(model => model.Person.LastName)
     </td>
     <td>
-        @Html.DisplayFor(model => model.HomeTown)
+        @Html.DisplayFor(model => model.Person.HomeTown)
+    </td>
+    <td>
+        @Html.Label("Addresses", Model.AddressCount.ToString(), new { title = Model.AddressTitleString, @class = "pntr" }); 
     </td>
 </tr>

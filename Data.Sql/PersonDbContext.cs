@@ -14,7 +14,7 @@ namespace Data.Sql
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             SetupPersonEntity(modelBuilder);
-            SetupCountryEntity(modelBuilder);
+            SetupAddressEntity(modelBuilder);
         }
 
         private static void SetupPersonEntity(DbModelBuilder modelBuilder)
@@ -26,20 +26,23 @@ namespace Data.Sql
             modelBuilder.Entity<Person>().Property(p => p.LastName).IsRequired();
             modelBuilder.Entity<Person>().Property(p => p.HomeTown).IsRequired();
 
-            modelBuilder.Entity<Person>().HasMany(p => p.VisitedCountries).WithMany(c => c.VisitedBy);
+            modelBuilder.Entity<Person>().HasMany(p => p.Addresses).WithMany(c => c.Occupants);
         }
 
-        private static void SetupCountryEntity(DbModelBuilder modelBuilder)
+        private static void SetupAddressEntity(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Country>().HasKey(p => p.Id);
-            modelBuilder.Entity<Country>().Property(p => p.Id)
+            modelBuilder.Entity<Address>().HasKey(p => p.Id);
+            modelBuilder.Entity<Address>().Property(p => p.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            modelBuilder.Entity<Country>().Property(p => p.Name).IsRequired();
+            modelBuilder.Entity<Address>().Property(p => p.Street).IsRequired();
+            modelBuilder.Entity<Address>().Property(p => p.City).IsOptional();
+            modelBuilder.Entity<Address>().Property(p => p.State).IsOptional();
+            //modelBuilder.Entity<Address>().Property(p => p.ZipCode).IsOptional();
         }
 
         public DbSet<Person> Persons { get; set; }
 
-        public DbSet<Country> Countries { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         
         public new void SaveChanges()
         {
