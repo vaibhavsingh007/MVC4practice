@@ -5,6 +5,7 @@ using System.Text;
 using DomainModel.Abstract;
 using Data;
 using Models;
+using ExceptionFacade;
 
 namespace DomainModel.Handlers
 {
@@ -21,14 +22,46 @@ namespace DomainModel.Handlers
         {
             IEnumerable<Person> retval = null;
 
-            retval = _personRepo.GetPersons();
+            try
+            {
+                retval = _personRepo.GetPersons();
+            }
+            catch (Exception e)
+            {
+                ExceptionHandlers.LogException(e, Constants.ErrorLogFolderPath, true);
+            }
             return retval;
         }
 
         public Person GetPersonById(int id)
         {
             Person retval = null;
-            retval = _personRepo.GetPersonById(id);
+            
+            try
+            {
+                retval = _personRepo.GetPersonById(id);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandlers.LogException(e, Constants.ErrorLogFolderPath, true);
+            }
+            return retval;
+        }
+
+
+        public List<Address> GetPersonAddresses(int personId)
+        {
+            List<Address> retval = null;
+
+            try
+            {
+                retval = _personRepo.GetAddressesByPersonId(personId);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandlers.LogException(e, Constants.ErrorLogFolderPath, true);
+            }
+
             return retval;
         }
     }

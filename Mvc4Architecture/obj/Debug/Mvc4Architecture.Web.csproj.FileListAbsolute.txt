@@ -47,3 +47,5 @@ C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Archi
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture\bin\Data.Sql.pdb
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture\bin\DomainModel.dll
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture\bin\DomainModel.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture\bin\Utils.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture\bin\Utils.pdb

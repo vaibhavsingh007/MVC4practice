@@ -12,9 +12,6 @@
         @Html.DisplayFor(model => model.Person.LastName)
     </td>
     <td>
-        @Html.DisplayFor(model => model.Person.HomeTown)
-    </td>
-    <td>
-        @Html.Label("Addresses", Model.AddressCount.ToString(), new { title = Model.AddressTitleString, @class = "pntr" }); 
+        @Html.Label("Addresses", Model.AddressCount.ToString(), new { id = Model.Person.Id, title = Model.AddressTitleString, @class = "tooltip addrCount" }) 
     </td>
 </tr>

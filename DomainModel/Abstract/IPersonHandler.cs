@@ -10,5 +10,6 @@ namespace DomainModel.Abstract
     {
         IEnumerable<Person> GetAllPersons();
         Person GetPersonById(int id);
+        List<Address> GetPersonAddresses(int personId);
     }
 }

@@ -15,15 +15,55 @@ namespace Data.Sql.Repositories
         {
         }
 
+        /// <summary>
+        /// Eager loads Addresses.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Person> GetPersons()
         {
-            return GetDbSet<Person>().AsEnumerable();
+            List<Person> retval = null;
+            List<Address> unproxiedAddresses = null;
+
+            var persons = GetDbSet<Person>().AsEnumerable();
+
+            retval = new List<Person>();
+            unproxiedAddresses = new List<Address>();
+
+            foreach (var person in persons)
+            {
+                var unproxiedPerson = UnProxy<Person>(person);
+                foreach (var address in person.Addresses)
+                {
+                    unproxiedAddresses.Add(UnProxy<Address>(address));
+                }
+
+                unproxiedPerson.Addresses = unproxiedAddresses.ToList();
+                retval.Add(unproxiedPerson);
+
+                unproxiedAddresses.Clear();
+            }
+
+            return retval;
         }
 
 
         public Person GetPersonById(int id)
         {
             return GetDbSet<Person>().FirstOrDefault(p => p.Id == id);
+        }
+
+        public List<Address> GetAddressesByPersonId(int personId)
+        {
+            List<Address> retval = new List<Address>();
+
+            // Unproxying required.
+            foreach (var address in GetPersonById(personId).Addresses)
+            {
+                retval.Add(UnProxy<Address>(address));
+            }
+
+            return retval;
+
         }
     }
 }

@@ -59,3 +59,16 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+table, td, th {
+    border: 1px solid black;
+}
+
+td {
+    padding: 15px;
+}
+
+th {
+    background-color: green;
+    color: white;
+}

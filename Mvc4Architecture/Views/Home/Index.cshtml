@@ -1,11 +1,12 @@
-﻿@using Models
-@model IEnumerable<Person>
+﻿@using Mvc4Architecture.Models
+@model IEnumerable<PersonTdVM>
 @{
     ViewBag.Title = "Index";
 }
 @section scripts{
     @*@Scripts.Render("~/bundles/jqueryui")*@
 }
+@Html.Hidden("AddressAction", @Url.Action("GetPersonAddresses"))
 <h2>
     Index</h2>
 <div class="personList">
@@ -18,12 +19,12 @@
                 Last Name
             </th>
             <th>
-                Home Town
+                Addresses
             </th>
         </tr>
-        @foreach (Person person in Model)
+        @foreach (var personVM in Model)
         { 
-            @Html.Partial("_PersonTd", person)
+            @Html.Partial("_PersonTd", personVM)
         }
     </table>
 </div>

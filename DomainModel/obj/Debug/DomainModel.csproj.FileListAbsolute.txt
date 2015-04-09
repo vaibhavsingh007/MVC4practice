@@ -7,3 +7,5 @@ C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainMod
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\bin\Debug\Models.dll
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\bin\Debug\Data.pdb
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\bin\Debug\Models.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\bin\Debug\Utils.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\bin\Debug\Utils.pdb

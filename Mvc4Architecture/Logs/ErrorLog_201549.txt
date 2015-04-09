@@ -1,0 +1,4 @@
+ 4/9/2015 2:47:07 PM >> Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DomainModel.Handlers.PersonHandler.GetAllPersons() in C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\DomainModel\Handlers\PersonHandler.cs:line 27
+

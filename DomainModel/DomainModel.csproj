@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IPersonHandler.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Handlers\PersonHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,6 +54,10 @@
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{C1D77A37-CA98-445F-8C0B-F249A5D566F4}</Project>
       <Name>Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{F5695BD6-73A7-46BC-8D3C-496CC62E682F}</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

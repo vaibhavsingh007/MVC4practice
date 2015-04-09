@@ -9,6 +9,8 @@ using System.Web.Routing;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.ServiceLocation;
 using Data.Base;
+using DomainModel;
+using System.Configuration;
 
 
 namespace Mvc4Architecture.Web
@@ -29,6 +31,7 @@ namespace Mvc4Architecture.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            LoadGlobalVariables();
             InitializeDependencyInjectionContainer();
             InitializeDatabase();
         }
@@ -54,5 +57,9 @@ namespace Mvc4Architecture.Web
             repositoryInitializer.Initialize();
         }
 
+        private void LoadGlobalVariables()
+        {
+            Constants.ErrorLogFolderPath = Server.MapPath(ConfigurationManager.AppSettings["LogDir"]);
+        }
     }
 }

@@ -47,3 +47,5 @@ C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Archi
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture.Tests\obj\Debug\Mvc4Architecture.Tests.pdb
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture.Tests\bin\Debug\DomainModel.dll
 C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture.Tests\bin\Debug\DomainModel.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture.Tests\bin\Debug\Utils.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\Mvc4Architecture.Tests\bin\Debug\Utils.pdb

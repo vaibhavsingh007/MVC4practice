@@ -1,0 +1,4 @@
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\ExceptionFacade\bin\Debug\ExceptionFacade.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\ExceptionFacade\bin\Debug\ExceptionFacade.pdb
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\ExceptionFacade\obj\Debug\ExceptionFacade.dll
+C:\Users\vsingh\Documents\Visual Studio 2010\Projects\Mvc4Architecture\ExceptionFacade\obj\Debug\ExceptionFacade.pdb

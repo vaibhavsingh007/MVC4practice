@@ -32,5 +32,20 @@ namespace Data.Sql.Base
         {
             this.Context.Entry(entity).State = entityState;
         }
+
+        protected T UnProxy<T>(T proxyObject) where T : class
+        {
+            var proxyCreationEnabled = Context.Configuration.ProxyCreationEnabled;
+            try
+            {
+                Context.Configuration.ProxyCreationEnabled = false;
+                T poco = Context.Entry(proxyObject).CurrentValues.ToObject() as T;
+                return poco;
+            }
+            finally
+            {
+                Context.Configuration.ProxyCreationEnabled = proxyCreationEnabled;
+            }
+        }
     }
 }

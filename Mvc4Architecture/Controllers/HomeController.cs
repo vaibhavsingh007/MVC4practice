@@ -37,7 +37,7 @@ namespace Mvc4Architecture.Controllers
                             });
             }
 
-            return View(persons);
+            return View(personVMs);
         }
 
         public PartialViewResult PersonDetails(int id)
@@ -47,5 +47,10 @@ namespace Mvc4Architecture.Controllers
             return PartialView("_PersonDetails", person);
         }
 
+        public JsonResult GetPersonAddresses(int personId)
+        {
+            var addresses = _personHandler.GetPersonAddresses(personId);
+            return Json(addresses, JsonRequestBehavior.AllowGet);
+        }
     }
 }
